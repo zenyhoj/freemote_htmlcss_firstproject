@@ -3,12 +3,14 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
   font-family: "Lexend Deca", sans-serif;
+  line-height: 1.7;
 
-  max-width: 1440px;
+  max-width: 1220px;
   margin: 0 auto;
 }
 
@@ -17,7 +19,7 @@ body {
   /* width: 80%; */
   /* margin: 0 auto; */
   padding: 40px 0;
-  border-bottom: 2px solid lightgray;
+  
 }
 
 .header h1 {
@@ -30,4 +32,70 @@ body {
   font-size: 1.4rem;
   margin-bottom: 16px;
   font-weight: 300;
+}
+
+.showcase {
+
+  padding: 40px 0;
+
+  display: flex;
+  align-items: center;
+  border-top: 2px solid lightgray;
+}
+
+
+.showcase-col1 {
+  width: 70%;
+
+   /* background-color: aquamarine; */
+ 
+}
+
+.showcase-col1 img {
+  width: 100%;
+  /* height: auto; */
+  object-fit: cover;
+  object-position: top center;
+  height: 400px;
+}
+
+
+.showcase-col2 {
+  width: 30%;
+  /* height: 400px; */
+  padding: 2rem;
+  /* background-color: blueviolet; */
+ 
+}
+
+.showcase-col2 h3 {
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+/* author styles */
+
+.author {
+  margin-top: 32px;
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 16px;
+  
+  align-items: center;
+}
+.author-icon img {
+
+ 
+  width: 32px;
+  border-radius: 50%;;
+}
+
+.author-bio p:nth-child(1) {
+  /* margin-bottom: 0; */
+  font-size: 1.2rem;
+}
+
+.author-bio p {
+  /* color: grey; */
 }
