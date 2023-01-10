@@ -1,10 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;700&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;600&display=swap');
 
 :root {
 
   --border-radius-outer: 16px;
   --border-radius-inner: 10px;
   --font-headline-desktop: 3.5rem;
+  --font-card-headline: 1.7rem;
 }
 
 
@@ -15,7 +17,7 @@
 }
 
 body {
-  font-family: "Lexend Deca", sans-serif;
+  font-family: 'Rubik', sans-serif;
   line-height: 1.7;
 
   max-width: 1220px;
@@ -81,7 +83,7 @@ body {
 .showcase-col2 h3 {
   line-height: 1.2;
   margin-bottom: 1rem;
-  font-size: 1.8rem;
+  font-size: var(--font-card-headline);
 }
 
 /* author styles */
@@ -132,10 +134,10 @@ border-radius: var(--border-radius-outer);
 
 
 
-/* .card__content h4 {
-  margin: 16px 0;
-
-} */
+ .card__content h4 {
+  /* margin: 16px 0; */
+font-size: var(--font-card-headline);
+} 
 
 .card__img {
   border-radius: var(--border-radius-inner);
